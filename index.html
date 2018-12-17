@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+
+<div>
+  <h1 id="title">EdWeb Services</h1>
+  <div id="main">
+    <p id="description">Please fill out the form bellow and we will contact you shortly</p>
+    <form id="survey-form">
+      <label id="name-label" class="space-it" for="name">Name
+      <input id="name" class="space-it field" type="text" name="name" placeholder="Enter your name" required>
+        </label>
+      <label id="email-label" class="space-it" for="email">Email
+      <input id="email" class="space-it field" type="email" name="email" placeholder="Enter your email" required>
+        </label>
+      <label id="number-label" class="space-it" for="number">Phone Number
+      <input id="number" class="space-it field" type="number" name="number" min="1" max="10" placeholder="Enter your phone number">
+        </label>
+      <label class="space-it" for="timeframe">Please select the time-frame in which your project must be completed</label>
+      <select id="dropdown" class="space-it field" list="timeframe" name="timeframe">
+        <option value="1 - 2 weeks">1 - 2 weeks</option>
+        <option value="2 - 4 weeks">2 - 4 weeks</option>
+        <option value="1 - 2 months">1 - 2 months</option>
+      </select>
+        
+      
+      <label for="contact">What is your preferred method of contact?</label>
+      <label for="Yes"><input type="radio" class="selection" name="contact" value="Phone">Phone</label>
+      <label for="No"><input type="radio" class="selection" name="contact" value="Email">Email</label>
+        
+      
+      <label class="space-it" for="services">What types of services do you need from us to complete your project?</label>
+      <label for="debugging"><input type="checkbox" class="selection" name="services" value="Debugging">Debugging</label>
+      <label for="front-end support"><input type="checkbox" name="services"  class="selection" value="front-end support">Front-end Support</label>
+      <label for="back-end support"><input type="checkbox" name="services"  class="selection" value="back-end-support">Back-end Support</label>
+      <label for="full-stack service"><input type="checkbox" name="services"  class="selection" value="full-stack-service">Full-stack Service</label>
+        
+      
+      <label for="project">Please tell us more about what you are trying to accomplish</label>
+      <textarea name="project" placeholder="Tell us the biggest issue we can solve for your company"></textarea>
+      <button id="submit" class="space-it">Submit</button>
+    </form>
+
+  </div>
+</div>
+  
+  
+
+</body>
+
+</html>
